@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="bbohorquezExamen.Vistas.AcercaDe"
+             Title="Acerca De">
+    <VerticalStackLayout>
+        
+        <StackLayout>
+            <Frame Margin="100,0,100,0">
+                <Label
+                    Text="ACERCA DEL SISTEMA"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"/>    
+            </Frame>
+        </StackLayout>
+        <StackLayout>
+            <Frame Margin="100,0,100,0">
+                <Label
+                    Text="Estudiante: Bryan Bohorquez"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"/>
+            </Frame>
+        </StackLayout>
+        <StackLayout>
+            <Frame Margin="100,0,100,0">
+                <Label
+                    Text="Curso: 7mo A"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"/>
+            </Frame>
+        </StackLayout>
+        <StackLayout>
+            <Frame Margin="100,0,100,0">
+                <Label
+                    Text="Carrerra: Informática Online"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"/>
+            </Frame>
+        </StackLayout>
+        <StackLayout>
+            <Frame Margin="100,0,100,0">
+                <Label
+                    Text="2024"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"/>
+            </Frame>
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

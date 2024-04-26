@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="bbohorquezExamen.Vistas.Registro"
+             Title="Registro">
+    <VerticalStackLayout
+        Spacing="20"
+        Padding="25">
+        <Label 
+            Text="REGISTRO"
+            TextColor="Blue"
+            FontSize="22"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label 
+            x:Name="lblUsuario"
+            Text="Usuario Conectado "
+            TextColor="Gray"
+            FontSize="14"
+            HorizontalTextAlignment="End" />
+
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Text="Fecha"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   HorizontalTextAlignment="Center"
+                />
+            <DatePicker x:Name="dpFecha" 
+                        Format="MM/DD/YYYY" 
+                        DateSelected="dpFecha_DateSelected"   
+                        Grid.Row="0"
+                        Grid.Column="1">
+            
+            </DatePicker>
+            <Label Text="Pais"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   HorizontalTextAlignment="Center"
+                />
+            <Picker x:Name="pkPais"
+                    SelectedIndexChanged="pkPais_SelectedIndexChanged"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    HorizontalTextAlignment="End"
+                    >
+                <Picker.Items>
+                    <x:String>ECUADOR</x:String>
+                    <x:String>PERU</x:String>
+                    <x:String>ARGENTINA</x:String>
+                    <x:String>BRASIL</x:String>
+                </Picker.Items>
+
+            </Picker>
+            <Label Text="Ciudad"
+                   Grid.Row="2"
+                   Grid.Column="0"
+                   HorizontalTextAlignment="Center"
+                />
+            <Picker x:Name="pkCiudad"
+                    SelectedIndexChanged="pkCiudad_SelectedIndexChanged"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    HorizontalTextAlignment="End"
+                    >
+                <Picker.Items>
+                    <x:String>QUITO</x:String>
+                    <x:String>LIMA</x:String>
+                    <x:String>BUENOS AIRES</x:String>
+                    <x:String>SAO PABLO</x:String>
+                </Picker.Items>
+
+            </Picker>
+            <Label Text="Monto Inicial"
+                   TextColor="Black"
+                   Grid.Row="3"
+                   Grid.Column="0"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtmontoIni"
+                   Placeholder="Ejemplo: 0,0"
+                   Grid.Row="3"
+                   Grid.Column="1"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Start">
+            </Entry>
+            <Label Text="Pago Mensual"
+                   TextColor="Black"
+                   Grid.Row="4"
+                   Grid.Column="0"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtpagoMensual"
+                   Grid.Row="4"
+                   Grid.Column="1"
+                   IsEnabled="False"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Start">
+            </Entry>
+            <Label Text="Nombre"
+                   TextColor="Blue"
+                   Grid.Row="5"
+                   Grid.Column="0"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtNombre"
+                   Grid.Row="6"
+                   Grid.Column="0"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Start">
+            </Entry>
+            <Label Text="Apellido"
+                   TextColor="Blue"
+                   Grid.Row="5"
+                   Grid.Column="1"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtApellido"
+                   Grid.Row="6"
+                   Grid.Column="1"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Start">
+            </Entry>
+            <Label Text="Edad"
+                   TextColor="Blue"
+                   Grid.Row="5"
+                   Grid.Column="2"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtEdad"
+                   Grid.Row="6"
+                   Grid.Column="2"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Start">
+            </Entry>
+            <Button x:Name="btnCalcularPago" Text="Calcular" Clicked="btnCalcularPago_Clicked"
+                    CornerRadius="20"
+                    Grid.Row="7"
+                    Grid.Column="0"
+                    />
+            <Button x:Name="btnResumen" Text="Ver Resumen" Clicked="btnResumen_Clicked"
+                    CornerRadius="20"
+                    Grid.Row="7"
+                    Grid.Column="2"
+                    />
+
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

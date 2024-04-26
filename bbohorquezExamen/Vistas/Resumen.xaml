@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="bbohorquezExamen.Vistas.Resumen"
+             Title="Resumen">
+    <VerticalStackLayout>
+        <Label 
+            Text="RESUMEN"
+            TextColor="Blue"
+            FontSize="22"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label 
+            x:Name="lblUsuario"
+            Text=""
+            TextColor="Gray"
+            FontSize="14"
+            HorizontalTextAlignment="End" />
+
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Nombre"
+                   TextColor="Blue"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtNombre"
+                   Grid.Row="0"
+                   Grid.Column="1"
+                   IsEnabled="False"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Start">
+            </Entry>
+            <Label Text="Apellido"
+                   TextColor="Blue"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtApellido"
+                   Grid.Row="1"
+                   Grid.Column="1"
+                   IsEnabled="False"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Start">
+            </Entry>
+            <Label Text="Edad"
+                   TextColor="Blue"
+                   Grid.Row="2"
+                   Grid.Column="0"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtEdad"
+                   Grid.Row="2"
+                   Grid.Column="1"
+                   IsEnabled="False"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Start">
+            </Entry>
+            <Label Text="Fecha"
+                   TextColor="Blue"
+                   Grid.Row="3"
+                   Grid.Column="0"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtFecha"
+                   Grid.Row="3"
+                   Grid.Column="1"
+                   IsEnabled="False"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Start">
+            </Entry>
+            <Label Text="Ciudad"
+                   TextColor="Blue"
+                   Grid.Row="4"
+                   Grid.Column="0"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtCiudad"
+                   Grid.Row="4"
+                   Grid.Column="1"
+                   IsEnabled="False"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Start">
+            </Entry>
+            <Label Text="Pais"
+                   TextColor="Blue"
+                   Grid.Row="5"
+                   Grid.Column="0"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtPais"
+                   Grid.Row="5"
+                   Grid.Column="1"
+                   IsEnabled="False"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Start">
+            </Entry>
+            <Label Text="Monto Inicial"
+                   TextColor="Blue"
+                   Grid.Row="6"
+                   Grid.Column="0"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtMontoIni"
+                   Grid.Row="6"
+                   Grid.Column="1"
+                   IsEnabled="False"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Start">
+            </Entry>
+            <Label Text="Pago Mensual"
+                   TextColor="Blue"
+                   Grid.Row="7"
+                   Grid.Column="0"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtPagoMensual"
+                   Grid.Row="7"
+                   Grid.Column="1"
+                   IsEnabled="False"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Start">
+            </Entry>
+            <Label Text="Pago Total"
+                   TextColor="Blue"
+                   Grid.Row="8"
+                   Grid.Column="0"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtPagoTotal"
+                   Grid.Row="8"
+                   Grid.Column="1"
+                   IsEnabled="False"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Start">
+            </Entry>
+
+            <Button Text="Cerrar Sesión" Clicked="Button_Clicked"
+                    Grid.Row="9"
+                    Grid.Column="0"
+                />
+
+
+
+
+        </Grid>
+
+    </VerticalStackLayout>
+</ContentPage>
